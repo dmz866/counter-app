@@ -8,14 +8,16 @@ export const CounterApp = ({ value }) => {
 		//setCounter(counter + 1);
 		setCounter((c) => c + 1);
 	};
+	const subs = () => setCounter(counter - 1);
+	const reset = () => setCounter(value);
 
 	return (
 		<>
 			<h1>CounterApp</h1>
 			<h2>{counter}</h2>
-			<button onClick={add}>
-				+1
-			</button>
+			<button onClick={add}>+1</button>
+			<button onClick={subs}>-1</button>
+			<button onClick={reset}>Reset</button>
 		</>
 	)
 }
