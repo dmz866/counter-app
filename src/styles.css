@@ -1,0 +1,10 @@
+html,
+body {
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}
+
+button {
+	padding: 15px;
+}
